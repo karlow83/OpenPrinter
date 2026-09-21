@@ -173,6 +173,16 @@ The `PETG_75C` profile is the production mesh loaded for PETG prints at a 75°C 
 * Mesh now shows a gentle overall gradient rather than isolated peaks or valleys.
 * Surface variation is smooth across the printable area with no abnormal discontinuities.
 
+### Live Z Compensation
+
+During the validation print (OP-TEST-001 Candidate v1.2), Klipper reported:
+
+```text
+Toolhead Z-Offset: 0.000 mm
+```
+
+No live BabyStep adjustment was applied during the print. The first layer was produced using only the saved BLTouch `z_offset` and the PETG_75C mesh profile.
+
 ### Result
 
 **Mesh range of 0.128 mm is accepted as the PETG production baseline.**
@@ -198,7 +208,7 @@ The following configuration is validated for Baseline v1.2:
 
 ```ini
 [bltouch]
-x_offset: 2.5
+x_offset: -2.5
 y_offset: -52
 
 [screws_tilt_adjust]
