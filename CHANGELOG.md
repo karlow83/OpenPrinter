@@ -1,3 +1,10 @@
+## 2026-09-21 — Baseline v1.3
+
+- Enabled OrcaSlicer Arc Fitting in printer profile.
+- Added Klipper `[gcode_arcs]` support (`resolution: 0.1`).
+- Added `[exclude_object]` support for Orca object cancellation.
+- Verified G3 arc commands generated in sliced G-code.
+
 ## v0.1.2-alpha — Mechanical Baseline
 
 ### Added

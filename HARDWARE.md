@@ -11,3 +11,10 @@ Validated upgrades:
 - Silicone bed spacers
 - OPP-001 Webcam Corner Mount
 - 190 mm 24V LED Strip
+
+# OpenPrinter Hardware Baseline (v0.4.0-alpha)
+
+Printer: Creality Ender 5 Pro
+Host: DietPi 10.7.2
+Firmware: Klipper
+Board: SKR Mini E3 V3.0 (STM32G0B1)
