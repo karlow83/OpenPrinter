@@ -1,3 +1,17 @@
+## Current Production Baseline
+
+**Baseline:** v1.3 (26 September 2026)
+
+The current production baseline validates the migration from the Creality v1.1.5 electronics to the BTT SKR Mini E3 V3.0 while retaining the existing OpenPivot mechanical configuration.
+
+Validated production configuration includes:
+
+- SKR Mini E3 V3.0 running Klipper.
+- TMC2209 UART drivers.
+- SpreadCycle motion configuration for X and Y axes.
+- PETG hardened steel nozzle production profile (240°C / 75°C).
+- PETG_75C production bed mesh used for both PETG and PLA-F.
+
 ## 2026-09-21 — Baseline v1.3
 
 - Enabled OrcaSlicer Arc Fitting in printer profile.

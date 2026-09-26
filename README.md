@@ -2,19 +2,24 @@
 
 > Open-source upgrades, mounts and documentation for the Creality Ender 5 Pro running Klipper.
 
-## Current Printer
+### Printer Platform (P-003)
 
-* Printer: Creality Ender 5 Pro
-* Firmware: Klipper
-* Host: DietPi 10.7.2
-* Board: Creality v1.1.5 (ATmega1284P)
-* Slicer: OrcaSlicer
-* Material: Sunlu PETG
-* Nozzle: 0.4 mm Hardened Steel
+| Component   | Production Configuration 					 |
+|-------------|----------------------------------------------|
+| Printer     | Creality Ender 5 Pro 						 |
+| Mainboard   | **BigTreeTech SKR Mini E3 V3.0 (STM32G0B1)** |
+| Firmware    | Klipper 									 |
+| Drivers     | Integrated TMC2209 UART 					 |
+| Extruder    | Direct Drive (17HS3401S + Dual Gear)		 |
+| Cooling     | Dual 5015 Part Cooling 						 |
+| Probe       | BLTouch 									 |
+| Bed Surface | Gold textured PEI spring steel 				 |
 
 ## Current Status
 
-Production configuration validated for PETG printing.
+**Production Baseline:** v1.3 (26 September 2026)
+
+Validated production configuration for Printer Platform **P-003** using the BigTreeTech SKR Mini E3 V3.0 running Klipper with TMC2209 UART drivers.
 
 ## Components
 

@@ -6,7 +6,7 @@ Firmware				Klipper
 
 Web UI					Mainsail
 
-Board					Creality v1.1.5 (ATmega1284P)
+Board					BigTreeTech SKR Mini E3 V3.0 (STM32G0B1)
 
 Probe					BLTouch
 

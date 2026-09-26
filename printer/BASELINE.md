@@ -1,14 +1,18 @@
 # OpenPrinter Ender 5 Pro Baseline
 
-Printer:
+## Current Production Baseline
 
-* Ender 5 Pro
-* Creality 1.1.5 board
-* Klipper
-* BLTouch
-* Dual 5015 cooling
-* Direct Drive conversion
-* Brass nozzle
+**Baseline:** v1.3 (2026-09-26)
+
+This baseline validates the migration from the Creality v1.1.5 mainboard to the BTT SKR Mini E3 V3.0 while retaining the existing OpenPivot mechanical configuration.
+
+Validated components include:
+
+- SKR Mini E3 V3.0 installation.
+- TMC2209 UART driver configuration.
+- SpreadCycle motion configuration on X/Y.
+- PETG hardened steel production profile.
+- PETG_75C production bed mesh for both PETG and PLA-F.
 
 Material baseline:
 
