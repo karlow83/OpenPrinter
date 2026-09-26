@@ -607,3 +607,44 @@ Future validation is only required if:
 * the TMC driver configuration is modified,
 * input shaper is recalibrated,
 * or the motion system hardware is altered.
+
+### Additional Validation – BLTouch Spacer Production Batch
+
+A production batch of six BLTouch spacers was printed using the Baseline v1.3 PLA-F profile after updating the SKR Mini E3 V3.0 driver configuration.
+
+**Print Conditions**
+
+* Material: PLA-F
+* Nozzle: 225°C
+* Bed: 65°C
+* Bed Mesh: PETG_75C
+* X/Y Run Current: 0.80 A
+* X/Y Driver Mode: SpreadCycle during motion
+
+**Results**
+
+| Observation          | Result                                                                                          |
+| -------------------- | ----------------------------------------------------------------------------------------------- |
+| Completed parts      | 5 of 6                                                                                          |
+| Layer shifts         | None observed                                                                                   |
+| Dimensional accuracy | Passed                                                                                          |
+| Surface quality      | Improved over previous 230°C profile                                                            |
+| Failure mode         | One part detached from the PEI surface during printing. Remaining parts completed successfully. |
+
+**Conclusion**
+
+The completed spacers confirmed that the Baseline v1.4-alpha motion configuration eliminated the previously observed intermittent X/Y layer shifts. The single failed part was consistent with a local bed adhesion failure on a very small component rather than a motion-system error.
+
+### Motor Thermal Validation
+
+Motor temperatures were checked immediately after completing the PLA-F BLTouch spacer validation print using the Baseline v1.3 production configuration.
+
+| Axis | Observation                               |
+| ---- | ----------------------------------------- |
+| X    | Warm to the touch after print completion. |
+| Y    | Cold to the touch after print completion. |
+
+The X-axis motor temperature is consistent with the increased mass of the direct-drive toolhead operating at `run_current: 0.80`. No overheating, skipped steps, or thermal shutdown behaviour was observed.
+
+**Result:** Motor temperatures accepted as part of the Baseline v1.3 production validation.
+
